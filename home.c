@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "after_name.h"
+#include "after_choice.h"
 #include "instructions.h"
 #include "category.h"
 int main()
