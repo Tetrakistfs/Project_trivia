@@ -4,4 +4,4 @@ contents of the repository:
 home.c
 after_choice.h
 category.h
-instructions.h
+instructions.c
