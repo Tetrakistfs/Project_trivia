@@ -5,7 +5,7 @@
 #include "global_chit_chats.h"
 int main()
 {
-    printf("phhh\n");
+    printf("hhhhhhhhhhhhhhhhhhhh\n");
     char name[31],command;
     int n;
     printf("\e[1;1H\e[2J");
