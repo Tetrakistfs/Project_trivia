@@ -39,8 +39,6 @@ int main()
             printf("\e[1;1H\e[2J");
             category();
         }
-        else
-        return 0;
     }
-
+    return 0;
 }
