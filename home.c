@@ -6,6 +6,7 @@
 int main()
 {
     printf("pppp\n");
+    printf("jjjjj\n");
     char name[31],command;
     int n;
     printf("\e[1;1H\e[2J");
