@@ -9,3 +9,4 @@ Spacing in options
 jump to our home page after finishing of quiz
 checkpoints after 5 questions
 terminating condition of for loop
+payal jain
