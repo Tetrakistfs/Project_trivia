@@ -13,16 +13,19 @@ int category()
     printf("\n\t\t\tF). THE WEEB\n");
     printf("\n\t\t\tG). GAMING\n");
     printf("\n\t\t\tH). Global Chit-Chats\n");
-    printf("\t\t\tchoose your categories::");
+    printf("\t\t\tchoose your categories::\n");
 
     int choose_cout = 0;
     while(choose_cout<3)
     {
-        printf("category:%--> %d.", choose_cout+1);
+        printf("\t\t\tcategory:%--> %d.", choose_cout+1);
         scanf(" %c", &choose_cat[choose_cout]);
-        if (choose_cat[choose_cout]=='A' || choose_cat[choose_cout]=='a' || choose_cat[choose_cout]=='B' || choose_cat[choose_cout]=='b' || choose_cat[choose_cout]=='C' || choose_cat[choose_cout]=='c' || choose_cat[choose_cout]=='D' || choose_cat[choose_cout]=='d' || choose_cat[choose_cout]=='E' || choose_cat[choose_cout]=='e' || choose_cat[choose_cout]=='F' || choose_cat[choose_cout]=='f' || choose_cat[choose_cout]=='G' || choose_cat[choose_cout]=='g' ||choose_cat[choose_cout]=='H'||choose_cat[choose_cout]=='h')
+        if (toupper(choose_cat[choose_cout]) =='A' || toupper(choose_cat[choose_cout]) =='B' || toupper(choose_cat[choose_cout]) =='C' || toupper(choose_cat[choose_cout]) =='D'||
+            toupper(choose_cat[choose_cout]) =='E' || toupper(choose_cat[choose_cout]) =='F' || toupper(choose_cat[choose_cout]) =='G' || toupper(choose_cat[choose_cout]) =='H')
         choose_cout++;
         else
         printf("That's not a valid category \"DUMMY\",choose a valid category\n");
+        if(choose_cout == 3)
+        return 0;
     }
 }

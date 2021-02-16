@@ -5,7 +5,16 @@ home.c
 after_choice.h
 category.h
 instructions.h
-Spacing in options
+global_chit_chats.h
+
+bugs in the program:
 jump to our home page after finishing of quiz
 checkpoints after 5 questions
-terminating condition of for loop
+the loop in the home.c is not working properly
+
+
+features to be added:
+after category selection the S to start game loop should break.
+
+bugs fixed:
+Spacing in options -- fixed
