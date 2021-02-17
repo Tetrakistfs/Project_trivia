@@ -4,6 +4,7 @@
 #include "after_choice.h"
 #include "instructions.h"
 #include "category.h"
+#include "avengers.h"
 int main()
 {
     char name[31],command;
@@ -47,6 +48,11 @@ int main()
         {
             printf("\e[1;1H\e[2J");
             category();
+        }
+        if(toupper(command)== 'A')
+        {
+            printf("\e[1;1H\e[2J");
+            avengers();
         }
 
         if(toupper(command) == 'Q')
