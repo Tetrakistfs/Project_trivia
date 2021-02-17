@@ -6,6 +6,7 @@ after_choice.h
 category.h
 instructions.h
 global_chit_chats.h
+avengers.h
 
 bugs in the program:
 jump to our home page after finishing of quiz

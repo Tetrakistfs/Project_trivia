@@ -3,7 +3,7 @@
 
 int category()
 {
-    char choose_cat[5];
+    char choose_cat[3];
     printf("\t\t\tPick any 3 categories:\n");
     printf("\n\t\t\tA). BOOKWORM\n");
     printf("\n\t\t\tB). POLYMUSE\n");
