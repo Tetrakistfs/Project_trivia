@@ -1,5 +1,5 @@
 # Project_trivia
- mid sem project:first year
+mid sem project:first year
 contents of the repository:
 home.c
 after_choice.h
@@ -19,3 +19,10 @@ after category selection the S to start game loop should break.
 
 bugs fixed:
 Spacing in options -- fixed
+
+msg to be printed after end of game using if else condition(3)
+concepts for continue the game using file handling concepts
+highest score
+graphics
+hidden riward
+include header files containing questions in category.h instead of home.c

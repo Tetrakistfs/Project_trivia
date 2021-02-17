@@ -1,0 +1,174 @@
+//Contains questions on current affairs
+//first 7 questions are of national level and 8 are of global level
+#include<stdio.h>
+
+int chit_chat()
+{
+    int score = 0;
+    char choice[15];
+    printf("1.'Electra Gold Cup' is associated with which sports?\n\tA.\tLawn Tennis\n\tB.\tTable Tennis\n\tC.\t Badminton\n\tD.\tFootball\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[0]);
+    if(choice[0] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("\e[1;1H\e[2J");
+    printf("2.Who among the following was first black Formula One World Champion in history?\n\tA.\tM  Felipe Massa\n\tB.\tJensson Button\n\tC.\tLewis Hamilton\n\tD.\tFernando Alonso\n");
+    printf("Choice ->");   
+    scanf(" %c", &choice[1]);
+    if(choice[1] == 'C')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
+    printf("\e[1;1H\e[2J");
+    printf("3.Euro Cup is related to which sports?\n\tA.\tBadminton\n\tB.\tFootball\n\tC.\tTable Tennis\n\tD.\tHockey\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[2]);
+    if(choice[2] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("\e[1;1H\e[2J");
+    printf("4.Who among the following was known as Flying Sikh?\n\tA.\tMilkha Singh\n\tB.\tHarbhajan Singh\n\tC.\tYuvaraj Singh\n\tD.\tGurbachan Singh\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[3]);
+    if(choice[3] == 'A')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is A\n");}
+    printf("\e[1;1H\e[2J");
+    printf("5.Kazakhstan is a part of which of the following continental confederations recognized by FIFA?\n\tA.\tAsian Football Confederation\n\tB.\tConfederation Africaine de Football\n\tC.\tUnion of European Football Associations\n\tD.\tNone of them\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[4]);
+    if(choice[4] == 'C')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
+    printf("\e[1;1H\e[2J");
+    printf("6.Who is the Mascot of Hockey World Cup 2018?\n\tA.\tOlly\n\tB.\tPerko\n\tC.\tStockey\n\tD.\tStumpy\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[5]);
+    if(choice[5] == 'A')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is A\n");}
+    printf("\e[1;1H\e[2J");
+    printf("7.Who is the current manager of Manchester United?\n\tA.\tJose Mourinho\n\tB.\tMarco Silva\n\tC.\tClaude Puel\n\tD.\tRoy Hodgson\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[6]);
+    if(choice[6] == 'A')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is A\n");}
+    printf("\e[1;1H\e[2J");
+    printf("8.When was the first women’s T20I match hosted in India?\n\tA.\t1999\n\tB.\t1994\n\tC.\t2006\n\tD.\t2010\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[7]);
+    if(choice[7] == 'D')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is D\n");}
+    printf("\e[1;1H\e[2J");
+    printf("9.How many nations had participated in the first Olympic Games held in 1896?\n\tA.\t20\n\tB.\t35\n\tC.\t14\n\tD.\t63\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[8]);
+    if(choice[8] == 'C')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
+    printf("\e[1;1H\e[2J");
+    printf("10.Who is ranked number one women’s tennis player in the world in 2017 as per WTA?\n\tA.\tSerena Williams\n\tB.\tSimona Halep\n\tC.\tGarbine Muguruza\n\tD.\tVictoria Azarenka\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[9]);
+    if(choice[9] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("\e[1;1H\e[2J");
+    printf("11.Who had started the International Women’s Boxing Hall of Fame?\n\tA.\tTerri Moss\n\tB.\tSue TL Fox\n\tC.\tClaressa Shields\n\tD.\tBarbara Buttrick\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[10]);
+    if(choice[10] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("\e[1;1H\e[2J");
+    printf("12.Where are the headquarters of International Gymnastics Federation?\n\tA.\tEngland\n\tB.\tGermany\n\tC.\tSwitzerland\n\tD.\tFrance\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[11]);
+    if(choice[11] == 'C')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
+    printf("\e[1;1H\e[2J");
+    printf("13.Which is the governing body of Cycling sport in the world?\n\tA.\tCycling Association of the World\n\tB.\tWorld Cycling Federation\n\tC.\tInternational Cycling Union\n\tD.\tInternational Cycling Association\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[12]);
+    if(choice[12] == 'C')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
+    printf("\e[1;1H\e[2J");
+    printf("14.Who is the current chairman of ICC?\n\tA.\tJagmohan Dalmiya\n\tB.\tShashank Manohar\n\tC.\tRajiv Shukla\n\tD.\tDave Richardson\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[13]);
+    if(choice[13] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("\e[1;1H\e[2J");
+    printf("15.When was the first induction ceremony held by the International Women’s Boxing Hall of Fame?\n\tA.\t2013\n\tB.\t2014\n\tC.\t2015\n\tD.\t2016\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[14]);
+    if(choice[14] == 'B')
+    {
+        score = score+100;
+        printf("CORRECT ANSWER!!!!");
+    }
+    else
+    {printf("oops!!WRONG ANSWER\nCorrect answer is B\n");}
+    printf("Congrants!!! Your Score is %d\n" , score);
+}
