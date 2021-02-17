@@ -7,6 +7,10 @@ category.h
 instructions.h
 global_chit_chats.h
 avengers.h
+technology.h
+gaming.h
+fiction_&_literature.h
+anime.h
 
 bugs in the program:
 jump to our home page after finishing of quiz
