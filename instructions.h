@@ -1,7 +1,7 @@
 //instructions of the Trivia
 #include<stdio.h>
 
-void instructions()
+int instructions()
 {
     printf("\t\t\t\t\t\t|||| TRIVIA GAME ||||\n");
     printf("\t\t\t\t\t    ||| RULES AND REGULATIONS |||\n");
@@ -13,4 +13,21 @@ void instructions()
     printf("\t\tThere is a hidden reward in the game and it will be revealed randomly in between the quiz\n");
     printf("\n\t\t\tpress 'R' to return to the game\n\t\t\tpress 'Q' to quit to main menu\n");
 
+    // for(int i = 0;i < 1000;i++)
+    // {
+    //     printf("\t\t\t: ");
+    //     scanf(" %c", &decision);
+    //     if(toupper(decision) == 'R')
+    //     {
+    //         return category();
+    //     }
+    //     if(toupper(decision) == 'Q')
+    //     {
+    //         return after_name();
+    //         i = 999;
+    //     }
+
+    //     else
+    //     printf("You only had to enter Y or N as an answer\tGo again: \n");
+    // }
 }

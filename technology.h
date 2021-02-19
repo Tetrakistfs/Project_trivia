@@ -277,4 +277,22 @@ int technology()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
+
+    for(int i = 0;i < 1000;i++)
+    {
+        printf("Do You want to take the Quiz again Y/N : ");
+        scanf(" %c", &decision);
+        if(toupper(decision) == 'Y')
+        {
+            return category();
+        }
+        if(toupper(decision) == 'N')
+        {
+            return quit();
+            i = 999;
+        }
+
+        else
+        printf("You only had to enter Y or N as an answer\tGo again: \n");
+    }
 }

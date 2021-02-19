@@ -1,10 +1,10 @@
 //Contains questions on current affairs
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
-
-int chit_chat()
+int score = 0;
+int sports()
 {
-    int score = 0;
+
     char choice[15];
     printf("\e[1;1H\e[2J");
     printf("1.'Electra Gold Cup' is associated with which sports?\n\tA.\tLawn Tennis\n\tB.\tTable Tennis\n\tC.\t Badminton\n\tD.\tFootball\n");
@@ -269,5 +269,23 @@ int chit_chat()
     {
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
+    }
+
+    for(int i = 0;i < 1000;i++)
+    {
+        printf("Do You want to take the Quiz again Y/N : ");
+        scanf(" %c", &decision);
+        if(toupper(decision) == 'Y')
+        {
+            return category();
+        }
+        if(toupper(decision) == 'N')
+        {
+            return quit();
+            i = 999;
+        }
+
+        else
+        printf("You only had to enter Y or N as an answer\tGo again: \n");
     }
 }
