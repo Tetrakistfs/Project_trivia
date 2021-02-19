@@ -2,7 +2,7 @@
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
 
-int chit_chat()
+int global_chit_chats()
 {
     int score = 0;
     char choice[15];
@@ -249,6 +249,7 @@ int chit_chat()
     }
     else
     {printf("oops!!WRONG ANSWER\nCorrect answer is D\n");}
+
     if(score>1000)
     {
         printf("Congrants!!! Your Score is %d\n" , score);
@@ -263,5 +264,23 @@ int chit_chat()
     {
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
+    }
+
+    for(int i = 0;i < 1000;i++)
+    {
+        printf("Do You want to take the Quiz again Y/N : ");
+        scanf(" %c", &decision);
+        if(toupper(decision) == 'Y')
+        {
+            return category();
+        }
+        if(toupper(decision) == 'N')
+        {
+            return quit();
+            i = 999;
+        }
+
+        else
+        printf("You only had to enter Y or N as an answer\tGo again: \n");
     }
 }

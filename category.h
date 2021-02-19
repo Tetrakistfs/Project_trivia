@@ -1,20 +1,20 @@
 //for the category section
 #include<stdio.h>
-#include "after_choice.h"
 
+#include "fiction_&_literature.h"
+#include "music.h"
 #include "avengers.h"
-#include "anime.h"
-#include "fiction_&_literature"
-#include "gaming.h"
-#include "global_chit_chats.h"
 #include "sports.h"
 #include "technology.h"
-#include "music.h"
+#include "anime.h"
+#include "gaming.h"
+#include "global_chit_chats.h"
 
 int category()
 {
     char choose_cat;
-    printf("\t\t\tPick any 1 category:\n");
+    printf("\e[1;1H\e[2J");
+    printf("\n\t\t\tPick any 1 category:\n");
     printf("\n\t\t\tA). BOOKWORM\n");
     printf("\n\t\t\tB). POLYMUSE\n");
     printf("\n\t\t\tC). CINEMAPHILE\n");
@@ -24,6 +24,7 @@ int category()
     printf("\n\t\t\tG). GAMING\n");
     printf("\n\t\t\tH). Global Chit-Chats\n"); 
     printf("\n\t\t\tPress 'Q' to return to Main Menu\n");
+
     printf("\n\t\t\tChoice->");
     scanf(" %c",&choose_cat);
     if(toupper(choose_cat) == 'A')
@@ -56,7 +57,7 @@ int category()
     }
     if(toupper(choose_cat) == 'H')
     {
-        chit_chat();
+        global_chit_chats();
     }
     if(toupper(choose_cat) == 'Q')
     {

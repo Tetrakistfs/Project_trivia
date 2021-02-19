@@ -15,7 +15,6 @@ anime.h
 bugs in the program:
 jump to our home page after finishing of quiz
 checkpoints after 5 questions
-the loop in the home.c is not working properly
 
 
 features to be added:
@@ -23,9 +22,11 @@ after category selection the S to start game loop should break.
 
 bugs fixed:
 Spacing in options -- fixed
+the crashing errors -- fixed
+the loop in the home.c errors -- fixed
 
 
-concepts for continue the game using file handling concepts
+concepts for continue the game using file handling concepts:
 highest score
 graphics
 hidden riward
