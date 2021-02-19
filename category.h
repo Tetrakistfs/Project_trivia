@@ -1,10 +1,20 @@
 //for the category section
 #include<stdio.h>
+#include "after_choice.h"
+
+#include "avengers.h"
+#include "anime.h"
+#include "fiction_&_literature"
+#include "gaming.h"
+#include "global_chit_chats.h"
+#include "sports.h"
+#include "technology.h"
+#include "music.h"
 
 int category()
 {
-    char choose_cat[3];
-    printf("\t\t\tPick any 3 categories:\n");
+    char choose_cat;
+    printf("\t\t\tPick any 1 category:\n");
     printf("\n\t\t\tA). BOOKWORM\n");
     printf("\n\t\t\tB). POLYMUSE\n");
     printf("\n\t\t\tC). CINEMAPHILE\n");
@@ -12,20 +22,45 @@ int category()
     printf("\n\t\t\tE). THE GEEK\n");
     printf("\n\t\t\tF). THE WEEB\n");
     printf("\n\t\t\tG). GAMING\n");
-    printf("\n\t\t\tH). Global Chit-Chats\n");
-    printf("\t\t\tchoose your categories::\n");
-
-    int choose_cout = 0;
-    while(choose_cout<3)
+    printf("\n\t\t\tH). Global Chit-Chats\n"); 
+    printf("\n\t\t\tPress 'Q' to return to Main Menu\n");
+    printf("\n\t\t\tChoice->");
+    scanf(" %c",&choose_cat);
+    if(toupper(choose_cat) == 'A')
     {
-        printf("\t\t\tcategory:%--> %d.", choose_cout+1);
-        scanf(" %c", &choose_cat[choose_cout]);
-        if (toupper(choose_cat[choose_cout]) =='A' || toupper(choose_cat[choose_cout]) =='B' || toupper(choose_cat[choose_cout]) =='C' || toupper(choose_cat[choose_cout]) =='D'||
-            toupper(choose_cat[choose_cout]) =='E' || toupper(choose_cat[choose_cout]) =='F' || toupper(choose_cat[choose_cout]) =='G' || toupper(choose_cat[choose_cout]) =='H')
-        choose_cout++;
-        else
-        printf("That's not a valid category \"DUMMY\",choose a valid category\n");
-        if(choose_cout == 3)
-        return 0;
+        fiction();
     }
+    if(toupper(choose_cat) == 'B')
+    {
+        music();
+    }
+    if(toupper(choose_cat) == 'C')
+    {
+        avengers();
+    }
+    if(toupper(choose_cat) == 'D')
+    {
+        sports();
+    }
+    if(toupper(choose_cat) == 'E')
+    {
+        technology();
+    }
+    if(toupper(choose_cat) == 'F')
+    {
+        anime();
+    }
+    if(toupper(choose_cat) == 'G')
+    {
+        gaming();
+    }
+    if(toupper(choose_cat) == 'H')
+    {
+        chit_chat();
+    }
+    if(toupper(choose_cat) == 'Q')
+    {
+        after_name();
+    }
+    
 }
