@@ -24,7 +24,7 @@ after category selection the S to start game loop should break.
 bugs fixed:
 Spacing in options -- fixed
 
-msg to be printed after end of game using if else condition(3)
+
 concepts for continue the game using file handling concepts
 highest score
 graphics

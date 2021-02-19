@@ -3,9 +3,7 @@
 #include<time.h>
 //#include<unistd.h>
 #include "after_choice.h"
-#include "instructions.h"
-#include "category.h"
-#include "avengers.h"
+
 int main()
 {
     char name[31],command;
@@ -28,42 +26,5 @@ int main()
     printf("\t\t\t________________________________________________\n");
     printf("\t\t\t________________________________________________\n");
     after_name();
-
-    for(int i=0;i<1000;i++)
-    {  
-        printf("choice-->");
-        scanf(" %c", &command);
-        
-        if(toupper(command) == 'I')
-        {
-            printf("wait ");
-            for(int i=2;i>0;i--)
-            {
-                printf("%d..", i);
-                sleep(1);
-            }
-            printf("\e[1;1H\e[2J");
-            instructions();
-        }
-        if(toupper(command) == 'S')
-        {
-            printf("\e[1;1H\e[2J");
-            category();
-        }
-        if(toupper(command)== 'A')
-        {
-            printf("\e[1;1H\e[2J");
-            avengers();
-        }
-
-        if(toupper(command) == 'Q')
-        i=999;
-
-        else
-        {
-            printf("Make a valid choice...!!!!");
-        }
-        
-    }
     return 0;
 }
