@@ -1,7 +1,7 @@
 //Contains questions on movies/avengers
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
-
+char decision;
 int avengers()
 {
     int score = 0;

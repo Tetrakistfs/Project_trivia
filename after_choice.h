@@ -3,8 +3,6 @@
 #include "instructions.h"
 #include "category.h"
 
-char decision;
-
 int after_name()
 {
     char command;

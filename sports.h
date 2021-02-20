@@ -2,6 +2,7 @@
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
 int score = 0;
+char decision;
 int sports()
 {
 
