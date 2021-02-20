@@ -29,5 +29,5 @@ the loop in the home.c errors -- fixed
 concepts for continue the game using file handling concepts:
 highest score
 graphics
-hidden riward
+hidden reward
 include header files containing questions in category.h instead of home.c
