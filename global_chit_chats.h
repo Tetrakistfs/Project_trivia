@@ -1,7 +1,7 @@
 //Contains questions on current affairs
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
-
+char decision;
 int global_chit_chats()
 {
     int score = 0;

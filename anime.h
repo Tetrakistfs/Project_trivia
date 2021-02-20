@@ -1,7 +1,7 @@
 //Contains questions on anime
 //first 5 questions are easy,next are a normal and the rest are difficult
 #include<stdio.h>
-
+char decision;
 int score;
 int anime()
 {
