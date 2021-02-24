@@ -1,5 +1,5 @@
-//Contains questions on current affairs
-//first 7 questions are of national level and 8 are of global level
+//Contains questions on music
+//first 5 questions are easy , next 5 are intermediate and last 5 are hard
 #include<stdio.h>
 char decision;
 int music()
