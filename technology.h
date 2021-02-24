@@ -255,13 +255,6 @@ int technology()
     }
     else
     {printf("oops!!WRONG ANSWER\nCorrect answer is C\n");}
-    printf("Moving to next question ");
-        for(int i=2;i>0;i--)
-        {
-            printf("%d..", i);
-            sleep(1);
-        }
-    printf("\e[1;1H\e[2J");
     if(score>1000)
     {
         printf("Congrants!!! Your Score is %d\n" , score);

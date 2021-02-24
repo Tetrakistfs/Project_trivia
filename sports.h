@@ -1,11 +1,10 @@
 //Contains questions on current affairs
-//first 7 questions are of national level and 8 are of global level
+//first 5 questions are easy , next 5 are intermediate and last 5 are hard
 #include<stdio.h>
-int score = 0;
-char decision;
+
 int sports()
 {
-
+    int score = 0;
     char choice[15];
     printf("\e[1;1H\e[2J");
     printf("1.'Electra Gold Cup' is associated with which sports?\n\tA.\tLawn Tennis\n\tB.\tTable Tennis\n\tC.\t Badminton\n\tD.\tFootball\n");
@@ -127,7 +126,7 @@ int sports()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("8.When was the first women’s T20I match hosted in India?\n\tA.\t1999\n\tB.\t1994\n\tC.\t2006\n\tD.\t2010\n");
+    printf("8.When was the first women\’s T20I match hosted in India?\n\tA.\t1999\n\tB.\t1994\n\tC.\t2006\n\tD.\t2010\n");
     printf("Choice ->");
     scanf(" %c", &choice[7]);
     if(toupper(choice[7]) == 'D')
@@ -161,7 +160,7 @@ int sports()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("10.Who is ranked number one women’s tennis player in the world in 2017 as per WTA?\n\tA.\tSerena Williams\n\tB.\tSimona Halep\n\tC.\tGarbine Muguruza\n\tD.\tVictoria Azarenka\n");
+    printf("10.Who is ranked number one women\’s tennis player in the world in 2017 as per WTA?\n\tA.\tSerena Williams\n\tB.\tSimona Halep\n\tC.\tGarbine Muguruza\n\tD.\tVictoria Azarenka\n");
     printf("Choice ->");
     scanf(" %c", &choice[9]);
     if(toupper(choice[9]) == 'B')
@@ -178,7 +177,7 @@ int sports()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("11.Who had started the International Women’s Boxing Hall of Fame?\n\tA.\tTerri Moss\n\tB.\tSue TL Fox\n\tC.\tClaressa Shields\n\tD.\tBarbara Buttrick\n");
+    printf("11.Who had started the International Women\’s Boxing Hall of Fame?\n\tA.\tTerri Moss\n\tB.\tSue TL Fox\n\tC.\tClaressa Shields\n\tD.\tBarbara Buttrick\n");
     printf("Choice ->");
     scanf(" %c", &choice[10]);
     if(toupper(choice[10]) == 'B')
@@ -246,7 +245,7 @@ int sports()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("15.When was the first induction ceremony held by the International Women’s Boxing Hall of Fame?\n\tA.\t2013\n\tB.\t2014\n\tC.\t2015\n\tD.\t2016\n");
+    printf("15.When was the first induction ceremony held by the International Women\’s Boxing Hall of Fame?\n\tA.\t2013\n\tB.\t2014\n\tC.\t2015\n\tD.\t2016\n");
     printf("Choice ->");
     scanf(" %c", &choice[14]);
     if(toupper(choice[14]) == 'B')
@@ -271,8 +270,7 @@ int sports()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
-
-    for(int i = 0;i < 1000;i++)
+     for(int i = 0;i < 1000;i++)
     {
         printf("Do You want to take the Quiz again Y/N : ");
         scanf(" %c", &decision);

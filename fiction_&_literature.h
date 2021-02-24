@@ -273,6 +273,7 @@ int fiction()
             printf("%d..", i);
             sleep(1);
         }
+    printf("\e[1;1H\e[2J");
     printf("15.In a Mark twain novel, a mechanic from what New England state went back in time and visited King Arthur's court?\n\tA.\tMassachusetts\n\tB.\tConnecticut\n\tC.\tRhode Island\n\tD.\tNew Hampshire\n");
     printf("Choice ->");
     scanf(" %c", &choice[14]);

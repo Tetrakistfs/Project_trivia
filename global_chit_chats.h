@@ -1,7 +1,7 @@
 //Contains questions on current affairs
 //first 7 questions are of national level and 8 are of global level
 #include<stdio.h>
-char decision;
+
 int global_chit_chats()
 {
     int score = 0;
@@ -18,11 +18,11 @@ int global_chit_chats()
     else
     {printf("oops!!WRONG ANSWER\nCorrect answer is A\n");}
     printf("Moving to next question ");
-        for(int i=2;i>0;i--)
-        {
-            printf("%d..", i);
-            sleep(1);
-        }
+    for(int i=2;i>0;i--)
+    {
+        printf("%d..", i);
+        sleep(1);
+    }
     printf("\e[1;1H\e[2J");
     printf("2.Who has been appointed as the next High Commissioner of India to Malawi?\n\tA.\tM Venkateswar\n\tB.\tKS Trimurthi\n\tC.\tS Gopalakrishnan\n\tD.\tR Shakuntala\n");
     printf("Choice ->");   
@@ -265,6 +265,7 @@ int global_chit_chats()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
+    char decision;
 
     for(int i = 0;i < 1000;i++)
     {
