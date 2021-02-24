@@ -37,6 +37,8 @@ void quit()
 }
 
                 /*****to be displayed after a choice in the category has been made*******/
+/******incomplete******/
+
 
 // ch after_cat;
 // //for THE WEEB choice
