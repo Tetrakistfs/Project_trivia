@@ -31,7 +31,7 @@ int category()
     }
     if(toupper(choose_cat) == 'B')
     {
-        music();
+        after_music();
     }
     if(toupper(choose_cat) == 'C')
     {
@@ -47,7 +47,7 @@ int category()
     }
     if(toupper(choose_cat) == 'F')
     {
-        anime();
+        after_anime();
     }
     if(toupper(choose_cat) == 'G')
     {
