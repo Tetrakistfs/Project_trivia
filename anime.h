@@ -102,7 +102,7 @@ int anime()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("6.In \"Naruto,\" the main character (a ninja) wears what color?\n\tA.\tbright blue\n\tB.\twhite\n\tC.\tmuted red\n\tD.\tbright orange\n");
+    printf("6.In \"Naruto,\" the main character wears what color?\n\tA.\tbright blue\n\tB.\twhite\n\tC.\tmuted red\n\tD.\tbright orange\n");
     printf("Choice ->");
     scanf(" %c", &choice[5]);
     if(toupper(choice[5]) == 'D')
@@ -254,7 +254,7 @@ int anime()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("14.What is the name of Great Uncle \"Grunkle\" Stan’s shack in \"Gravity falls\".?\n\tA.\tThe Mystery Shack\n\tB.\tThe Misery Shack\n\tC.\tThe History Shack\n\tD.\tThe House of Horrors\n");
+    printf("14.What is the name of Great Uncle \"Grunkle\" Stan's shack in \"Gravity falls\".?\n\tA.\tThe Mystery Shack\n\tB.\tThe Misery Shack\n\tC.\tThe History Shack\n\tD.\tThe House of Horrors\n");
     printf("Choice ->");
     scanf(" %c", &choice[13]);
     if(toupper(choice[13]) == 'A')

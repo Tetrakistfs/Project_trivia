@@ -1,4 +1,4 @@
-//to print the statements after the choices are made
+                            /****to print the statements after the choices are made****/
 #include<stdio.h>
 #include "instructions.h"
 #include "category.h"
@@ -37,10 +37,9 @@ void quit()
 }
 
                 /*****to be displayed after a choice in the category has been made*******/
-/******incomplete******/
 char after_cat;
 
-                                /**common program to be displayed after each category**/ 
+                                /**common function to be displayed after each category**/ 
 int common_instruct()
 {
     printf("There will be a total of 15 Questions\n");
@@ -52,8 +51,141 @@ int common_instruct()
     return (after_cat);
 }  
 
+//1                                           /****for FICTION choice****/
+int after_fiction()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"Fiction\n\"");
+    printf("This category is about Fiction and Literature and reading books is good(not the Kindle!..).\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            fiction();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
 
-                                /****for THE WEEB choice****/
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+
+//2                                          /****for the POLYMUSE choice****/
+int after_music()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"POLYMUSE\n\"");
+    printf("This category is about MUSIC If you didn't bleed your eyes out.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            music();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
+
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+  
+//3                                          /****for the CINEMAPHILE choice****/
+int after_sports()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"THE CINEMAPHILE\n\"");
+    printf("This category is about Movies especially MCU cause we didn't had any other questions.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            avengers();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
+
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+
+//4                                           /****for the TECHNOLOGY choice****/
+int after_technology()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"Technology\n\"");
+    printf("This category is about Technology and i'm sure you can do it.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            technology();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
+
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+//5                                          /****for THE WEEB choice****/
 int after_anime()
 {
     printf("\e[1;1H\e[2J");
@@ -86,18 +218,18 @@ int after_anime()
     }    
 }
 
-                                    /****for the POLYMUSE choice****/
-int after_music()
+//6                                          /****for the GAMMING choice****/
+int after_gaming()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"THE WEEB\n\"");
-    printf("This category is about MUSIC If you didn't bleed your eyes out.\n");
+    printf("\"GAMING\n\"");
+    printf("This category is about Gaming and i'm sure that you play them.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
     {
         if(toupper(after_cat) == 'E')
         {    
-            music();
+            gaming();
             break;
         }    
         if(toupper(after_cat) == 'R')
@@ -118,31 +250,36 @@ int after_music()
         }
     }    
 }
-  
 
+//8                                      /****for the GLOBAL CHIT CHATS choice****/
+int after_global_chit_chats()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"GLOBAL CHIT CHATS\n\"");
+    printf("This category is about Global news if you watch the news channels.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            global_chit_chats();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
 
-//     for(int i=0; i<1000;i++)
-//     {
-//         if(toupper(after_cat) == 'E')
-//         {    
-//             anime();
-//             break;
-//         }    
-//         if(toupper(after_cat) == 'R')
-//         {
-//             category();
-//             break;
-//         }
-//         if(toupper(after_cat) == 'I')
-//         {
-//             instructions();
-//             break;
-//         }
-
-//         else
-//         {
-//             printf("Enter a valid choice, DUMMY!!\n");
-//             continue;
-//         }    
-//     }    
-
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
