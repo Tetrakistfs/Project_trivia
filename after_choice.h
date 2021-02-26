@@ -90,7 +90,7 @@ int after_music()
 {
     printf("\e[1;1H\e[2J");
     printf("\"POLYMUSE\n\"");
-    printf("This category is about MUSIC If you didn't bleed your eyes out.\n");
+    printf("This category is about MUSIC If you didn't bleed your ears out.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
     {
@@ -119,7 +119,7 @@ int after_music()
 }
   
 //3                                          /****for the CINEMAPHILE choice****/
-int after_sports()
+int after_avengers()
 {
     printf("\e[1;1H\e[2J");
     printf("\"THE CINEMAPHILE\n\"");
@@ -151,8 +151,40 @@ int after_sports()
     }    
 }
 
+//4                                          /****for the SPORTS choice****/
+int after_sports()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"SPORTS\"");
+    printf("This category is about Sports and i know you are not physically fit.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            sports();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
 
-//4                                           /****for the TECHNOLOGY choice****/
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+//5                                           /****for the TECHNOLOGY choice****/
 int after_technology()
 {
     printf("\e[1;1H\e[2J");
@@ -185,7 +217,7 @@ int after_technology()
     }    
 }
 
-//5                                          /****for THE WEEB choice****/
+//6                                          /****for THE WEEB choice****/
 int after_anime()
 {
     printf("\e[1;1H\e[2J");
@@ -218,7 +250,7 @@ int after_anime()
     }    
 }
 
-//6                                          /****for the GAMMING choice****/
+//7                                          /****for the GAMING choice****/
 int after_gaming()
 {
     printf("\e[1;1H\e[2J");
