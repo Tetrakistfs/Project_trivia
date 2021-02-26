@@ -55,7 +55,7 @@ int common_instruct()
 int after_fiction()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"Fiction\n\"");
+    printf("\"Fiction\"\n");
     printf("This category is about Fiction and Literature and reading books is good(not the Kindle!..).\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -89,7 +89,7 @@ int after_fiction()
 int after_music()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"POLYMUSE\n\"");
+    printf("\"POLYMUSE\"\n");
     printf("This category is about MUSIC If you didn't bleed your ears out.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -122,7 +122,7 @@ int after_music()
 int after_avengers()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"THE CINEMAPHILE\n\"");
+    printf("\"THE CINEMAPHILE\"\n");
     printf("This category is about Movies especially MCU cause we didn't had any other questions.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -155,7 +155,7 @@ int after_avengers()
 int after_sports()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"SPORTS\"");
+    printf("\"SPORTS\"\n");
     printf("This category is about Sports and i know you are not physically fit.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -188,7 +188,7 @@ int after_sports()
 int after_technology()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"Technology\n\"");
+    printf("\"Technology\"\n");
     printf("This category is about Technology and i'm sure you can do it.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -221,7 +221,7 @@ int after_technology()
 int after_anime()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"THE WEEB\n\"");
+    printf("\"THE WEEB\"\n");
     printf("This category is about Anime If you watch em.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -254,7 +254,7 @@ int after_anime()
 int after_gaming()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"GAMING\n\"");
+    printf("\"GAMING\"\n");
     printf("This category is about Gaming and i'm sure that you play them.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
@@ -287,7 +287,7 @@ int after_gaming()
 int after_global_chit_chats()
 {
     printf("\e[1;1H\e[2J");
-    printf("\"GLOBAL CHIT CHATS\n\"");
+    printf("\"GLOBAL CHIT CHATS\"");
     printf("This category is about Global news if you watch the news channels.\n");
     common_instruct();
     for(int i=0; i<1000;i++)
