@@ -2,14 +2,17 @@
 #include<stdio.h>
 #include "instructions.h"
 #include "category.h"
-void after_name()
+#include"prev_scores.h"
+#include"reset_score.h"
+
+int after_name()
 {
     char ch;
     printf("\e[1;1H\e[2J");
     printf("\t\t\t > Press S to Start the game\n");
     printf("\t\t\t > Press C to Continue the previous game\n");
     printf("\t\t\t > Press I for Rules and Regulations\n");
-    printf("\t\t\t > Press H for Highest score\n");
+    printf("\t\t\t > Press P for Previous score\n");
     printf("\t\t\t > Press R to Reset score\n");
     printf("\t\t\t > Press Q to Quit Game\n");
     printf("\t\t\t > Choice->");
@@ -18,15 +21,23 @@ void after_name()
     {
         category();
     }
+    if(toupper(ch)=='I')
+    {
+        main_instruct();
+    }
+    if(toupper(ch)=='P')
+    {
+        prev_scores();
+    }
+    if(toupper(ch)=='R')
+    {
+        reset_score();
+    }
     if(toupper(ch)=='Q')
     {
         return 0;
     }
-    if(toupper(ch)=='I')
-    {
-        instructions();
-    }
-       
+
 }
 
 //to quit the game
@@ -36,7 +47,7 @@ void quit()
     return after_name();
 }
 
-                /*****to be displayed after a choice in the category has been made*******/
+                        /*****to be displayed after a choice in the category has been made*******/
 char after_cat;
 
                                 /**common function to be displayed after each category**/ 
@@ -45,7 +56,7 @@ int common_instruct()
     printf("There will be a total of 15 Questions\n");
     printf("Press E to enter the quiz:\n");
     printf("Press R to return to the category choice menu:\n");
-    printf("Press I to see Instructions:\n");
+    //printf("Press I to see Instructions:\n");
     printf("Decision --> ");
     scanf(" %c", &after_cat);
     return (after_cat);
@@ -56,7 +67,7 @@ int after_fiction()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"Fiction\n\"");
+    printf("\"Fiction\"\n");
     printf("This category is about Fiction and Literature and reading books is good(not the Kindle!..).\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -78,11 +89,11 @@ int after_fiction()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -98,7 +109,7 @@ int after_music()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"POLYMUSE\n\"");
+    printf("\"POLYMUSE\"\n");
     printf("This category is about MUSIC If you didn't bleed your ears out.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -120,11 +131,11 @@ int after_music()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -139,7 +150,7 @@ int after_avengers()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"THE CINEMAPHILE\n\"");
+    printf("\"THE CINEMAPHILE\"\n");
     printf("This category is about Movies especially MCU cause we didn't had any other questions.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -161,11 +172,11 @@ int after_avengers()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -174,6 +185,8 @@ int after_avengers()
         }
     }    
 }
+
+//4                                          /****for the SPORTS choice****/
 int after_sports()
 {
     int count;
@@ -200,11 +213,11 @@ int after_sports()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -214,45 +227,12 @@ int after_sports()
     }    
 }
 
-//4                                          /****for the SPORTS choice****/
-int after_sports()
-{
-    printf("\e[1;1H\e[2J");
-    printf("\"SPORTS\"");
-    printf("This category is about Sports and i know you are not physically fit.\n");
-    common_instruct();
-    for(int i=0; i<1000;i++)
-    {
-        if(toupper(after_cat) == 'E')
-        {    
-            sports();
-            break;
-        }    
-        if(toupper(after_cat) == 'R')
-        {
-            category();
-            break;
-        }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
-
-        else
-        {
-            printf("Enter a valid choice, DUMMY!!\n");
-            continue;
-        }
-    }    
-}
-
 //5                                           /****for the TECHNOLOGY choice****/
 int after_technology()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"Technology\n\"");
+    printf("\"Technology\"\n");
     printf("This category is about Technology and i'm sure you can do it.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -274,11 +254,11 @@ int after_technology()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -293,7 +273,7 @@ int after_anime()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"THE WEEB\n\"");
+    printf("\"THE WEEB\"\n");
     printf("This category is about Anime If you watch em.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -315,11 +295,11 @@ int after_anime()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -334,7 +314,7 @@ int after_gaming()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"GAMING\n\"");
+    printf("\"GAMING\"\n");
     printf("This category is about Gaming and i'm sure that you play them.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -356,11 +336,11 @@ int after_gaming()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -375,7 +355,7 @@ int after_global_chit_chats()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"GLOBAL CHIT CHATS\n\"");
+    printf("\"GLOBAL CHIT CHATS\"");
     printf("This category is about Global news if you watch the news channels.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
@@ -397,11 +377,11 @@ int after_global_chit_chats()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
