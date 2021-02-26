@@ -265,8 +265,12 @@ int global_chit_chats()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
+    FILE * ptr;
+    ptr = fopen("prev_scores.txt", "a");
+    fprintf(ptr, "%d\t\t%d\t\tCurrent Affairs\n", score);
+    count= count+1;
+    fclose(ptr);
     char decision;
-
     for(int i = 0;i < 1000;i++)
     {
         printf("Do You want to take the Quiz again Y/N : ");

@@ -8,6 +8,7 @@
 #include "sports.h"
 #include "technology.h"
 #include "music.h"
+int count = 1;
 int category()
 {
     char choose_cat;
