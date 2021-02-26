@@ -300,9 +300,11 @@ int anime()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
-
-   
-
+    FILE * ptr;
+    ptr = fopen("prev_scores.txt", "a");
+    fprintf(ptr, "%d\t\t%d\t\tAnime\n",count,score);
+    count = count+1;
+    fclose(ptr);
     for(int i = 0;i < 1000;i++)
     {
         printf("Do You want to take the Quiz again Y/N : ");
@@ -316,7 +318,6 @@ int anime()
             return quit();
             i = 999;
         }
-
         else
         printf("You only had to enter Y or N as an answer\tGo again: \n");
     }
