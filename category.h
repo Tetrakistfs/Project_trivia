@@ -9,6 +9,7 @@
 #include "technology.h"
 #include "music.h"
 int count = 1;
+int category();
 int category()
 {
     char choose_cat;

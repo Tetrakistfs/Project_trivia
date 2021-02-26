@@ -300,10 +300,13 @@ int gaming()
         printf("Your Score is %d\n" ,score);
         printf("Better luck next time\n");
     }
-    FILE * ptr;
+    int s_num;
+    FILE * ptr = NULL;;
+    FILE * num = fopen("serial_number.txt" , "r");
+    fscanf(num, "%d", &s_num);
+    fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tGaming\n", score);
-    count= count+1;
+    fprintf(ptr, "%d\t\t%d\t\tGaming\n",s_num,score);
     fclose(ptr);
     for(int i = 0;i < 1000;i++)
     {
