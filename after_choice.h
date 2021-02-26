@@ -214,8 +214,40 @@ int after_sports()
     }    
 }
 
+//4                                          /****for the SPORTS choice****/
+int after_sports()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"SPORTS\"");
+    printf("This category is about Sports and i know you are not physically fit.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            sports();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
 
-//4                                           /****for the TECHNOLOGY choice****/
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+//5                                           /****for the TECHNOLOGY choice****/
 int after_technology()
 {
     int count;
@@ -256,7 +288,7 @@ int after_technology()
     }    
 }
 
-//5                                          /****for THE WEEB choice****/
+//6                                          /****for THE WEEB choice****/
 int after_anime()
 {
     int count;
@@ -297,7 +329,7 @@ int after_anime()
     }    
 }
 
-//6                                          /****for the GAMMING choice****/
+//7                                          /****for the GAMING choice****/
 int after_gaming()
 {
     int count;
