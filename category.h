@@ -8,6 +8,7 @@
 #include "sports.h"
 #include "technology.h"
 #include "music.h"
+
 int count = 1;
 int category();
 int category()
@@ -24,6 +25,7 @@ int category()
     printf("\n\t\t\tG). GAMING");
     printf("\n\t\t\tH). Global Chit-Chats"); 
     printf("\n\t\t\tPress 'Q' to return to Main Menu");
+    printf("\n\t\t\tPress 'I' to see Instructions");
     printf("\n\t\t\tChoice->");
     scanf(" %c",&choose_cat);
     if(toupper(choose_cat) == 'A')
@@ -62,5 +64,11 @@ int category()
     {
         after_name();
     }
-    
+    if(toupper(choose_cat) == 'I')
+    {
+        instructions();
+    }
+    // else
+    // printf("\n\t\t\tNot A valid Choice..!!");
+    // int category();
 }

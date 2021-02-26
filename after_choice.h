@@ -2,14 +2,17 @@
 #include<stdio.h>
 #include "instructions.h"
 #include "category.h"
-void after_name()
+#include"prev_scores.h"
+#include"reset_score.h"
+
+int after_name()
 {
     char ch;
     printf("\e[1;1H\e[2J");
     printf("\t\t\t > Press S to Start the game\n");
     printf("\t\t\t > Press C to Continue the previous game\n");
     printf("\t\t\t > Press I for Rules and Regulations\n");
-    printf("\t\t\t > Press H for Highest score\n");
+    printf("\t\t\t > Press P for Previous score\n");
     printf("\t\t\t > Press R to Reset score\n");
     printf("\t\t\t > Press Q to Quit Game\n");
     printf("\t\t\t > Choice->");
@@ -18,15 +21,23 @@ void after_name()
     {
         category();
     }
+    if(toupper(ch)=='I')
+    {
+        main_instruct();
+    }
+    if(toupper(ch)=='P')
+    {
+        prev_scores();
+    }
+    if(toupper(ch)=='R')
+    {
+        reset_score();
+    }
     if(toupper(ch)=='Q')
     {
         return 0;
     }
-    if(toupper(ch)=='I')
-    {
-        instructions();
-    }
-       
+
 }
 
 //to quit the game
@@ -36,7 +47,7 @@ void quit()
     return after_name();
 }
 
-                /*****to be displayed after a choice in the category has been made*******/
+                        /*****to be displayed after a choice in the category has been made*******/
 char after_cat;
 
                                 /**common function to be displayed after each category**/ 
@@ -45,7 +56,7 @@ int common_instruct()
     printf("There will be a total of 15 Questions\n");
     printf("Press E to enter the quiz:\n");
     printf("Press R to return to the category choice menu:\n");
-    printf("Press I to see Instructions:\n");
+    //printf("Press I to see Instructions:\n");
     printf("Decision --> ");
     scanf(" %c", &after_cat);
     return (after_cat);
@@ -78,11 +89,11 @@ int after_fiction()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -120,11 +131,11 @@ int after_music()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -161,11 +172,11 @@ int after_avengers()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -174,6 +185,8 @@ int after_avengers()
         }
     }    
 }
+
+//4                                          /****for the SPORTS choice****/
 int after_sports()
 {
     int count;
@@ -200,49 +213,16 @@ int after_sports()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
             printf("Enter a valid choice, DUMMY!!\n");
             common_instruct();
-        }
-    }    
-}
-
-//4                                          /****for the SPORTS choice****/
-int after_sports()
-{
-    printf("\e[1;1H\e[2J");
-    printf("\"SPORTS\"\n");
-    printf("This category is about Sports and i know you are not physically fit.\n");
-    common_instruct();
-    for(int i=0; i<1000;i++)
-    {
-        if(toupper(after_cat) == 'E')
-        {    
-            sports();
-            break;
-        }    
-        if(toupper(after_cat) == 'R')
-        {
-            category();
-            break;
-        }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
-
-        else
-        {
-            printf("Enter a valid choice, DUMMY!!\n");
-            continue;
         }
     }    
 }
@@ -274,11 +254,11 @@ int after_technology()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -315,11 +295,11 @@ int after_anime()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -356,11 +336,11 @@ int after_gaming()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
@@ -397,11 +377,11 @@ int after_global_chit_chats()
             category();
             break;
         }
-        if(toupper(after_cat) == 'I')
-        {
-            instructions();
-            break;
-        }
+        // if(toupper(after_cat) == 'I')
+        // {
+        //     instructions();
+        //     break;
+        // }
 
         else
         {
