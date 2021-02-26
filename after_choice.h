@@ -38,26 +38,93 @@ void quit()
 
                 /*****to be displayed after a choice in the category has been made*******/
 /******incomplete******/
+char after_cat;
+
+                                /**common program to be displayed after each category**/ 
+int common_instruct()
+{
+    printf("There will be a total of 15 Questions\n");
+    printf("Press E to enter the quiz:\n");
+    printf("Press R to return to the category choice menu:\n");
+    printf("Press I to see Instructions:\n");
+    printf("Decision --> ");
+    scanf(" %c", &after_cat);
+    return (after_cat);
+}  
 
 
-// ch after_cat;
-// //for THE WEEB choice
-// int after_anime()
-// {
-//     printf("\e[1;1H\e[2J");
-//     printf("\"THE WEEB\n\"");
-//     printf("This category is about Anime If you watch em.\n");
-//     printf("There will be a total of 15 Questions\n");
-//     printf("Press E to enter the quiz:")
-//     printf("Press R to return to the category choice menu:");
-//     printf("Press I to see Instructions:");
-//     printf("Decision --> ")
-//     scanf("%c", &after_cat);
-    
+                                /****for THE WEEB choice****/
+int after_anime()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"THE WEEB\n\"");
+    printf("This category is about Anime If you watch em.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            anime();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
+
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+
+                                    /****for the POLYMUSE choice****/
+int after_music()
+{
+    printf("\e[1;1H\e[2J");
+    printf("\"THE WEEB\n\"");
+    printf("This category is about MUSIC If you didn't bleed your eyes out.\n");
+    common_instruct();
+    for(int i=0; i<1000;i++)
+    {
+        if(toupper(after_cat) == 'E')
+        {    
+            music();
+            break;
+        }    
+        if(toupper(after_cat) == 'R')
+        {
+            category();
+            break;
+        }
+        if(toupper(after_cat) == 'I')
+        {
+            instructions();
+            break;
+        }
+
+        else
+        {
+            printf("Enter a valid choice, DUMMY!!\n");
+            continue;
+        }
+    }    
+}
+  
+
+
 //     for(int i=0; i<1000;i++)
 //     {
 //         if(toupper(after_cat) == 'E')
-//         {
+//         {    
 //             anime();
 //             break;
 //         }    

@@ -29,6 +29,6 @@ the loop in the home.c errors -- fixed
 concepts for continue the game using file handling concepts:
 highest score
 graphics
-hidden reward
+
 include header files containing questions in category.h instead of home.c
 msg to be displayed after category selection (eg.Best of luck)
