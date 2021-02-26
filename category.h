@@ -27,7 +27,7 @@ int category()
     scanf(" %c",&choose_cat);
     if(toupper(choose_cat) == 'A')
     {
-        fiction();
+        after_fiction();
     }
     if(toupper(choose_cat) == 'B')
     {
@@ -35,15 +35,15 @@ int category()
     }
     if(toupper(choose_cat) == 'C')
     {
-        avengers();
+        after_avengers();
     }
     if(toupper(choose_cat) == 'D')
     {
-        sports();
+        after_sports();
     }
     if(toupper(choose_cat) == 'E')
     {
-        technology();
+        after_technology();
     }
     if(toupper(choose_cat) == 'F')
     {
@@ -51,11 +51,11 @@ int category()
     }
     if(toupper(choose_cat) == 'G')
     {
-        gaming();
+        after_gaming();
     }
     if(toupper(choose_cat) == 'H')
     {
-        global_chit_chats();
+        after_global_chit_chats();
     }
     if(toupper(choose_cat) == 'Q')
     {
