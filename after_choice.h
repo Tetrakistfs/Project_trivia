@@ -37,7 +37,7 @@ int after_name()
     }
     if(toupper(ch)=='Q')
     {
-        return 0;
+        exit(0);
     }
 
 }
@@ -56,6 +56,7 @@ char after_cat;
 int common_instruct()
 {
     printf("There will be a total of 15 Questions\n");
+    printf("Once started you cannot quit the quiz in the middle");
     printf("Press E to enter the quiz:\n");
     printf("Press R to return to the category choice menu:\n");
     printf("Decision --> ");

@@ -19,7 +19,6 @@ contents of the repository:
 16.serial_number.txt
 
 /***********************bugs in the program:*********************************/
-the quit button has to be pressed for the same no. of times that the user has played or selected different categories and then returned to the main screen.
 
 features to be added:
 NIL 
@@ -29,3 +28,4 @@ Spacing in options -- fixed
 the crashing errors -- fixed
 the loop in the home.c errors -- fixed
 warnings in the declarations and sleep functions --fixed
+the quit button has to be pressed for the same no. of times that the user has played or selected different categories and then returned to the main screen. --fixed

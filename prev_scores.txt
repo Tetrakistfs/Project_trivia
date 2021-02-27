@@ -1,3 +1,7 @@
 1		400		Music
 2		700		Music
 3		1500		Anime
+4		700		Music
+5		100		Global Chit chats
+6		600		Fiction and Literature
+7		500		Anime
