@@ -1,7 +1,6 @@
 //Contains questions on gaming
 //first 5 ques are of easy, 5 of medium and next of the hard
 #include<stdio.h>
-char decision;
 int gaming()
 {
     int score = 0;

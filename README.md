@@ -1,34 +1,31 @@
 # Project_trivia
 mid sem project:first year
 contents of the repository:
-home.c
-after_choice.h
-category.h
-instructions.h
-global_chit_chats.h
-avengers.h
-technology.h
-gaming.h
-fiction_&_literature.h
-anime.h
+1.home.c
+2.after_choice.h
+3.category.h
+4.instructions.h
+5.global_chit_chats.h
+6.avengers.h
+7.technology.h
+8.gaming.h
+9.fiction_&_literature.h
+10.anime.h
+11.sports.h
+12.music.h
+13.prev_scores.h
+14.prev_scores.txt
+15.reset_score.h
+16.serial_number.txt
 
-bugs in the program:
-jump to our home page after finishing of quiz
-checkpoints after 5 questions
-
+/***********************bugs in the program:*********************************/
+the quit button has to be pressed for the same no. of times that the user has played or selected different categories and then returned to the main screen.
 
 features to be added:
-after category selection the S to start game loop should break.
+NIL 
 
 bugs fixed:
 Spacing in options -- fixed
 the crashing errors -- fixed
 the loop in the home.c errors -- fixed
-
-
-concepts for continue the game using file handling concepts:
-highest score
-graphics
-
-include header files containing questions in category.h instead of home.c
-msg to be displayed after category selection (eg.Best of luck)
+warnings in the declarations and sleep functions --fixed

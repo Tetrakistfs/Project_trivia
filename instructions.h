@@ -1,6 +1,9 @@
 //instructions of the Trivia
 #include<stdio.h>
-
+int main_instruct();
+int instructions();
+int after_name();
+int category();
                                     /**For the main menu**/
 int main_instruct()
 {
@@ -49,7 +52,7 @@ int instructions()
         scanf(" %c", &ch);
         if(toupper(ch) == 'R')
         {
-            return (int) category();
+            return category();
             i = 999;
         }
         else

@@ -1,19 +1,31 @@
 //for the category section
 #include<stdio.h>
-#include "avengers.h"
-#include "anime.h"
+
 #include "fiction_&_literature.h"
-#include "gaming.h"
-#include "global_chit_chats.h"
+#include "music.h"
+#include "avengers.h"
 #include "sports.h"
 #include "technology.h"
-#include "music.h"
+#include "anime.h"
+#include "gaming.h"
+#include "global_chit_chats.h"
+
+
+int after_fiction();
+int after_music();
+int after_avengers();
+int after_sports();
+int after_technology();
+int after_anime();
+int after_gaming();
+int after_global_chit_chats();
 
 int count = 1;
-int category();
+char choose_cat;
+
 int category()
 {
-    char choose_cat;
+    
     printf("\e[1;1H\e[2J");
     printf("\t\t\tPick any 1 category:");
     printf("\n\t\t\tA). BOOKWORM");

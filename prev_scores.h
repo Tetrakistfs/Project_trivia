@@ -1,4 +1,6 @@
 #include<stdio.h>
+int prev_scores();
+
 int prev_scores()
 {
     FILE * ptr;
@@ -16,6 +18,7 @@ int prev_scores()
     fscanf(ptr, " %[^\0]s" , string);
     printf("%s\n" , string);
     fclose(ptr);
+    sleep(3);
     return after_name();
 
 

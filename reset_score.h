@@ -1,4 +1,5 @@
 #include<stdio.h>
+int reset_score();
 
 int reset_score()
 {
