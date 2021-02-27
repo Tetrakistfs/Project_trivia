@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<ctype.h>
 #include<time.h>
+#include <unistd.h>
 #include "after_choice.h"
 
 int main()

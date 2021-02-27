@@ -1,7 +1,6 @@
 //Contains questions on music
 //first 5 questions are easy , next 5 are intermediate and last 5 are hard
 #include<stdio.h>
-char decision;
 int music()
 {
     int score = 0;
@@ -75,7 +74,7 @@ int music()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("5.Yakshagana is a dance form of –\n\tA.\tAndhra Pradesh\n\tB.\tKarnataka\n\tC.\tTamil Nadu\n\tD.\tMaharashtra\n");
+    printf("5.Yakshagana is a dance form of -\n\tA.\tAndhra Pradesh\n\tB.\tKarnataka\n\tC.\tTamil Nadu\n\tD.\tMaharashtra\n");
     printf("Choice ->");
     scanf(" %c", &choice[4]);
     if(toupper(choice[4]) == 'B')
@@ -245,7 +244,7 @@ int music()
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("15.Dollu Kunitha is a popular folk dance of –\n\tA.\tNagaland\n\tB.\tGujarat\n\tC.\tKarnataka\n\tD.\tJharkhand\n");
+    printf("15.Dollu Kunitha is a popular folk dance of -\n\tA.\tNagaland\n\tB.\tGujarat\n\tC.\tKarnataka\n\tD.\tJharkhand\n");
     printf("Choice ->");
     scanf(" %c", &choice[14]);
     if(toupper(choice[14]) == 'C')

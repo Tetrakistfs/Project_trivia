@@ -1,5 +1,7 @@
                             /****to print the statements after the choices are made****/
 #include<stdio.h>
+char decision;                      //to be used in all quizzes headers files after the game is over
+
 #include "instructions.h"
 #include "category.h"
 #include"prev_scores.h"
@@ -41,7 +43,7 @@ int after_name()
 }
 
 //to quit the game
-void quit()
+int quit()
 {
     printf("\n\t\t\t\t\tThank you for playing the game\n");
     return after_name();
@@ -56,7 +58,6 @@ int common_instruct()
     printf("There will be a total of 15 Questions\n");
     printf("Press E to enter the quiz:\n");
     printf("Press R to return to the category choice menu:\n");
-    //printf("Press I to see Instructions:\n");
     printf("Decision --> ");
     scanf(" %c", &after_cat);
     return (after_cat);
@@ -89,11 +90,6 @@ int after_fiction()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -131,11 +127,6 @@ int after_music()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -172,11 +163,6 @@ int after_avengers()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -213,11 +199,6 @@ int after_sports()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -254,11 +235,6 @@ int after_technology()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -295,11 +271,6 @@ int after_anime()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
 
         else
         {
@@ -336,12 +307,6 @@ int after_gaming()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
-
         else
         {
             printf("Enter a valid choice, DUMMY!!\n");
@@ -377,12 +342,6 @@ int after_global_chit_chats()
             category();
             break;
         }
-        // if(toupper(after_cat) == 'I')
-        // {
-        //     instructions();
-        //     break;
-        // }
-
         else
         {
             printf("Enter a valid choice, DUMMY!!\n");
