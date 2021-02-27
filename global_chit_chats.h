@@ -68,6 +68,12 @@ int global_chit_chats()
     }
     else
     {printf("oops!!WRONG ANSWER\nCorrect answer is A\n");}
+     printf("Moving to next question ");
+        for(int i=2;i>0;i--)
+        {
+            printf("%d..", i);
+            sleep(1);
+        }
     printf("\e[1;1H\e[2J");
     printf("5.Who was the co-chair of the first India-European Union High-Level Dialogue (HLD) on trade and investment?\n\tA.\tPiyush Goyal\n\tB.\tNarendra Singh Tomar\n\tC.\tRavi Shankar Prasad\n\tD.\tSubrahmanyam Jaishankar\n");
     printf("Choice ->");
@@ -271,7 +277,7 @@ int global_chit_chats()
     fscanf(num, "%d", &s_num);
     fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tGlobal Chit chats\n",s_num,score);
+    fprintf(ptr, "%d\t\t%d\t\tGlobal Chit-Chats\n",s_num,score);
     fclose(ptr);
     char decision;
     for(int i = 0;i < 1000;i++)

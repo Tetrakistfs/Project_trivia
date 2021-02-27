@@ -44,43 +44,47 @@ int category()
     {
         after_fiction();
     }
-    if(toupper(choose_cat) == 'B')
+    else if(toupper(choose_cat) == 'B')
     {
         after_music();
     }
-    if(toupper(choose_cat) == 'C')
+    else if(toupper(choose_cat) == 'C')
     {
         after_avengers();
     }
-    if(toupper(choose_cat) == 'D')
+    else if(toupper(choose_cat) == 'D')
     {
         after_sports();
     }
-    if(toupper(choose_cat) == 'E')
+    else if(toupper(choose_cat) == 'E')
     {
         after_technology();
     }
-    if(toupper(choose_cat) == 'F')
+    else if(toupper(choose_cat) == 'F')
     {
         after_anime();
     }
-    if(toupper(choose_cat) == 'G')
+    else if(toupper(choose_cat) == 'G')
     {
         after_gaming();
     }
-    if(toupper(choose_cat) == 'H')
+    else if(toupper(choose_cat) == 'H')
     {
         after_global_chit_chats();
     }
-    if(toupper(choose_cat) == 'Q')
+    else if(toupper(choose_cat) == 'Q')
     {
         after_name();
+        
     }
-    if(toupper(choose_cat) == 'I')
+    else if(toupper(choose_cat) == 'I')
     {
         instructions();
     }
-    // else
-    // printf("\n\t\t\tNot A valid Choice..!!");
-    // int category();
+    else
+    {
+        printf("\n\t\t\tNot A valid Choice..!!");
+        sleep(1);
+        category();
+    }
 }

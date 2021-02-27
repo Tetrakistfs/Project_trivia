@@ -12,7 +12,6 @@ int after_name()
     char ch;
     printf("\e[1;1H\e[2J");
     printf("\t\t\t > Press S to Start the game\n");
-    printf("\t\t\t > Press C to Continue the previous game\n");
     printf("\t\t\t > Press I for Rules and Regulations\n");
     printf("\t\t\t > Press P for Previous score\n");
     printf("\t\t\t > Press R to Reset score\n");
@@ -23,21 +22,27 @@ int after_name()
     {
         category();
     }
-    if(toupper(ch)=='I')
+    else if(toupper(ch)=='I')
     {
         main_instruct();
     }
-    if(toupper(ch)=='P')
+    else if(toupper(ch)=='P')
     {
         prev_scores();
     }
-    if(toupper(ch)=='R')
+    else if(toupper(ch)=='R')
     {
         reset_score();
     }
-    if(toupper(ch)=='Q')
+    else if(toupper(ch)=='Q')
     {
-        return 0;
+        exit(0);
+    }
+    else
+    {
+        printf("\n\t\t\tNot A valid Choice..!!");
+        sleep(1);
+        after_name();
     }
 
 }
@@ -55,7 +60,9 @@ char after_cat;
                                 /**common function to be displayed after each category**/ 
 int common_instruct()
 {
+    printf("\e[1;1H\e[2J");
     printf("There will be a total of 15 Questions\n");
+    printf("Once started you cannot quit the quiz in the middle\n");
     printf("Press E to enter the quiz:\n");
     printf("Press R to return to the category choice menu:\n");
     printf("Decision --> ");
@@ -321,7 +328,7 @@ int after_global_chit_chats()
     int count;
     printf("\e[1;1H\e[2J");
     printf("\"GLOBAL CHIT CHATS\"");
-    printf("This category is about Global news if you watch the news channels.\n");
+    printf("\nThis category is about Global news if you watch the news channels.\n");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);

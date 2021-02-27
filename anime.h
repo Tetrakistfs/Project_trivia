@@ -305,7 +305,7 @@ int anime()
     fscanf(num, "%d", &s_num);
     fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tAnime\n",s_num,score);
+    fprintf(ptr, "%d\t\t%d\t\tTHE WEEB\n",s_num,score);
     fclose(ptr);
     for(int i = 0;i < 1000;i++)
     {
