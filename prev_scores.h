@@ -10,6 +10,7 @@ int prev_scores()
     if(check_file == 0)
     {
         printf("\t\t\tNO GAME HAS BEEN PLAYED YET\n");
+        sleep(2);
         return after_name();
     }
     char string[2000];
