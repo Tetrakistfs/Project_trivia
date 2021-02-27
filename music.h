@@ -275,7 +275,7 @@ int music()
     fscanf(num, "%d", &s_num);
     fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tMusic\n",s_num,score);
+    fprintf(ptr, "%d\t\t%d\t\tPOLYMUSE\n",s_num,score);
     fclose(ptr);
     for(int i = 0;i < 1000;i++)
     {

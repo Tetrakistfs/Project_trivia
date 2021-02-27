@@ -18,6 +18,8 @@ int reset_score()
             fprintf(fptr , "0");
             fclose(fptr);
             fclose(ptr);
+            printf("\nYour Scores has beet reset successfully!");
+            sleep(2);
             return after_name();
             break;
         }
