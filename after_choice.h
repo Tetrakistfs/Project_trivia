@@ -55,10 +55,10 @@ char after_cat;
                                 /**common function to be displayed after each category**/ 
 int common_instruct()
 {
-    printf("\033[0;35mThere will be a total of 15 Questions\n\033[0m");
     printf("\033[0;31mOnce started you cannot quit the quiz in the middle\033[0m\n");             //setting the color red
-    printf("\033[0;35mPress E to enter the quiz:\n");
-    printf("Press R to return to the category choice menu:\n\033[0m");
+    printf("There will be a total of 15 Questions\n");
+    printf("Press E to enter the quiz:\n");
+    printf("Press R to return to the category choice menu:\n");
     printf("Decision --> \033");                                                    //setting the color blue
     scanf(" %c", &after_cat);
     return (after_cat);
