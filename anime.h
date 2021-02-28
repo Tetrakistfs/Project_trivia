@@ -1,13 +1,12 @@
-//Contains questions on current affairs
-//first 7 questions are of national level and 8 are of global level
+//Contains questions on anime
+//first 5 questions are easy,next are a normal and the rest are difficult
 #include<stdio.h>
-
-int global_chit_chats()
+int score;
+int anime()
 {
-    int score = 0;
     char choice[15];
     printf("\e[1;1H\e[2J");
-    printf("1.Which state has celebrated its foundation day on 24 January?\n\tA.\tUttar Pradesh\n\tB.\tWest Bengal\n\tC.\tKerala\n\tD.\tGoa\n");
+    printf("1.Which anime also became a popular trading card game and one of the first augmented reality games to hit the market?\n\tA.\tPokemon\n\tB.\tCase Closed\n\tC.\tMagi\n\tD.\tKill la Kill\n");
     printf("Choice ->");
     scanf(" %c", &choice[0]);
     if(toupper(choice[0]) == 'A')
@@ -16,49 +15,55 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-    printf("Moving to next question ");
-    for(int i=2;i>0;i--)
     {
-        printf("%d..", i);
-        sleep(1);
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
     }
-    printf("\e[1;1H\e[2J");
-    printf("2.Who has been appointed as the next High Commissioner of India to Malawi?\n\tA.\tM Venkateswar\n\tB.\tKS Trimurthi\n\tC.\tS Gopalakrishnan\n\tD.\tR Shakuntala\n");
+    printf("Moving to next question ");
+        for(int i=2;i>0;i--)
+        {
+            printf("%d..", i);
+            sleep(1);
+        }
+    printf("\e[1;1H\e[2J");        
+    printf("2.\"Fullmetal Alchemist\" is an action-packed story centering on two brothers who lost more than one limb in a ritual to do what?\n\tA.\tgrow their power exponentially\n\tB.\tclose the portal to Hell\n\tC.\tcreate a homonculus\n\tD.\tbring back their dead mother\n");
     printf("Choice ->");   
     scanf(" %c", &choice[1]);
-    if(toupper(choice[1]) == 'C')
-    { 
-        score = score+100;
-        printf("\033[0;32mCorrect Answer!!!\033[0m");
-    }
-    else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
-     printf("Moving to next question ");
-        for(int i=2;i>0;i--)
-        {
-            printf("%d..", i);
-            sleep(1);
-        }
-    printf("\e[1;1H\e[2J");
-    printf("3.Which social media platform has suspended 500 accounts for policy breach after the Indian government's request?\n\tA.\tFacebook\n\tB.\tTwitter\n\tC.\tInstagram\n\tD.\tWhatsApp\n");
-    printf("Choice ->");
-    scanf(" %c", &choice[2]);
-    if(toupper(choice[2]) == 'B')
+    if(toupper(choice[1]) == 'D')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("4.Which organization has signed 2 separate MoUs with the smart factory, IISc, and SMDDC for creating the digital transformation labs in India?\n\tA.\tSiemens Ltd\n\tB.\tPhilips\n\tC.\tBosch\n\tD.\tLG\n");
+    printf("3.Which anime features a protagonist able to kill instantly by writing a person's name down in his notebook?\n\tA.\tDeath Note\n\tB.\tClannad\n\tC.\tFull Metal Panic\n\tD.\tHellsing\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[2]);
+    if(toupper(choice[2]) == 'A')
+    {
+        score = score+100;
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
+    }
+    else
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
+    }
+    printf("Moving to next question ");
+        for(int i=2;i>0;i--)
+        {
+            printf("%d..", i);
+            sleep(1);
+        }
+    printf("\e[1;1H\e[2J");    
+    printf("4.Around what concept is the hit show \"One Punch Man\" designed?\n\tA.\ta hero who defeats his enemies with a single punch\n\tB.\ta hero who is knocked out after taking one blow\n\tC.\ta hero who saves the universe with his flurry of punches\n\tD.\ta hero who only kicks his enemies to defeat them\n");
     printf("Choice ->");
     scanf(" %c", &choice[3]);
     if(toupper(choice[3]) == 'A')
@@ -67,32 +72,36 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("5.Who was the co-chair of the first India-European Union High-Level Dialogue (HLD) on trade and investment?\n\tA.\tPiyush Goyal\n\tB.\tNarendra Singh Tomar\n\tC.\tRavi Shankar Prasad\n\tD.\tSubrahmanyam Jaishankar\n");
+    printf("5.Which famous anime produced the term \"Super Saiyan\"?\n\tA.\tBerserk\n\tB.\tDragon Ball Z\n\tC.\tToradora\n\tD.\tSoul eater\n");
     printf("Choice ->");
     scanf(" %c", &choice[4]);
-    if(toupper(choice[4]) == 'A')
+    if(toupper(choice[4]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("6.The 'National Safety Council' has been set up by which Union Ministry?\n\tA.\tMinistry of Food Processing Industries\n\tB.\tMinistry of External Affairs\n\tC.\tMinistry of Finance\n\tD.\tMinistry of Labour\n");
+    printf("6.In \"Naruto,\" the main character wears what color?\n\tA.\tbright blue\n\tB.\twhite\n\tC.\tmuted red\n\tD.\tbright orange\n");
     printf("Choice ->");
     scanf(" %c", &choice[5]);
     if(toupper(choice[5]) == 'D')
@@ -101,49 +110,55 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("7.How many states have completed the reforms in 'Ease of Doing Business' as stipulated by the Ministry of Finance?\n\tA.\t20\n\tB.\t12\n\tC.\t10\n\tD.\t8\n");
+    printf("7.In which Miyazaki film do the characters search for an ancient floating castle?\n\tA.\tPorco Rosso\n\tB.\tMy Neighbor Totoro\n\tC.\tNausicaa of the Valley of the Wind\n\tD.\tCastle in the Sky\n");
     printf("Choice ->");
     scanf(" %c", &choice[6]);
-    if(toupper(choice[6]) == 'B')
+    if(toupper(choice[6]) == 'D')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("8.Which country is poised to become the second country in the world to land successfully on Mars?\n\tA.\tUAE\n\tB.\tIndia\n\tC.\tJapan\n\tD.\tChina\n");
+    printf("8.what kind of person Naruto is?\n\tA.\tA ninja\n\tB.\tA knight\n\tC.\tA sumrai\n\tD.\tA tree surgeon\n");
     printf("Choice ->");
     scanf(" %c", &choice[7]);
-    if(toupper(choice[7]) == 'D')
+    if(toupper(choice[7]) == 'A')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("9.Which Arab nation's space probe successfully entered the orbit of Mars?\n\tA.\tSaudi Arabia\n\tB.\tUAE\n\tC.\tQatar\n\tD.\tBahrain\n");
+    printf("9.What is the last name of Edward and Alphonse in the Fullmetal Alchemist series?\n\tA.\tAkerman\n\tB.\tElric\n\tC.\tJeager\n\tD.\tYagami\n");
     printf("Choice ->");
     scanf(" %c", &choice[8]);
     if(toupper(choice[8]) == 'B')
@@ -152,66 +167,74 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("10.Which nation has received USD 200 million from World Bank for safe water and sanitation services?\n\tA.\tPakistan\n\tB.\tNepal\n\tC.\tIndia\n\tD.\tBangladesh\n");
+    printf("10.Who is the author of the \"Attack on Titan manga\"?\n\tA.\tHajime Isayama\n\tB.\tNazaba Suzuki\n\tC.\tShinji Higuchi\n\tD.\tNazaba Suzuki\n");
     printf("Choice ->");
     scanf(" %c", &choice[9]);
-    if(toupper(choice[9]) == 'D')
+    if(toupper(choice[9]) == 'A')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("11.Which country is set to build the world's largest wind power plant?\n\tA.\tSouth Korea\n\tB.\tSingapore\n\tC.\tGermany\n\tD.\tIndia\n");
+    printf("11.Which shinigami dropped his notebook in the human world?\n\tA.\tGrell Sutcliff\n\tB.\tRem\n\tC.\tRyuk\n\tD.\tImiyer\n");
     printf("Choice ->");
     scanf(" %c", &choice[10]);
-    if(toupper(choice[10]) == 'A')
+    if(toupper(choice[10]) == 'C')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("12.Which Indian company has partnered with UNICEF to distribute vaccines around the world?\n\tA.\tBiocon\n\tB.\tSerum Institute of India\n\tC.\tBharat Biotech\n\tD.\tDr Reddys\n");
+    printf("12.What two companies currently hold copyrights to \"Dragon Ball\", \"Dragon Ball Z\", and \"Dragon Ball GT\"\n\tA.\tPioneer And Bird\n\tB.\tToei And Akira Toriyama\n\tC.\tFunimation And Toei\n\tD.\tFunimation And Pioneer\n");
     printf("Choice ->");
     scanf(" %c", &choice[11]);
-    if(toupper(choice[11]) == 'B')
+    if(toupper(choice[11]) == 'C')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("13.Name the first-ever female who has been appointed as the Director-General of the World Trade Organization?\n\tA.\tChukwuka Okonjo\n\tB.\tPascal Lamy\n\tC.\tIkemba Iweala\n\tD.\tNgozi Okonjo-Iweala\n");
+    printf("13.For most of the Hundred Year War, where was Avatar Aang in the series \"Avatar\"?\n\tA.\tIn the bookies\n\tB.\tDoing his big shop\n\tC.\tIn a dark Cave\n\tD.\tFrozen in an iceberg\n");
     printf("Choice ->");
     scanf(" %c", &choice[12]);
     if(toupper(choice[12]) == 'D')
@@ -220,15 +243,17 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("14.India has participated with which country in the first meeting of the Joint Working Group in the field of Renewable Energy?\n\tA.\tBahrain\n\tB.\tFrance\n\tC.\tJapan\n\tD.\tUSA\n");
+    printf("14.What is the name of Great Uncle \"Grunkle\" Stan's shack in \"Gravity falls\".?\n\tA.\tThe Mystery Shack\n\tB.\tThe Misery Shack\n\tC.\tThe History Shack\n\tD.\tThe House of Horrors\n");
     printf("Choice ->");
     scanf(" %c", &choice[13]);
     if(toupper(choice[13]) == 'A')
@@ -237,15 +262,17 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
+    }
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("15.Which company has been chosen by NASA for its SPHEREx Mission to perform an all-sky survey?\n\tA.\tBlue Origin\n\tB.\tSpaceX\n\tC.\tBoeing\n\tD.\tNational Aeronautics and Space Administration\n");
+    printf("15.What is 'anime' the Japanese word for?\n\tA.\tCartoon\n\tB.\tDrawing\n\tC.\tStory\n\tD.\tAnimation\n");
     printf("Choice ->");
     scanf(" %c", &choice[14]);
     if(toupper(choice[14]) == 'D')
@@ -254,8 +281,9 @@ int global_chit_chats()
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-
+    {
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
+    }
     if(score>1000)
     {
         printf("Congrants!!! Your Score is %d\n" , score);
@@ -277,9 +305,8 @@ int global_chit_chats()
     fscanf(num, "%d", &s_num);
     fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tGlobal Chit-Chats\n",s_num,score);
+    fprintf(ptr, "%d\t\t%d\t\tTHE WEEB\n",s_num,score);
     fclose(ptr);
-    char decision;
     for(int i = 0;i < 1000;i++)
     {
         printf("Do You want to take the Quiz again Y/N : ");
@@ -293,7 +320,6 @@ int global_chit_chats()
             return quit();
             i = 999;
         }
-
         else
         printf("You only had to enter Y or N as an answer\tGo again: \n");
     }

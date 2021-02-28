@@ -1,47 +1,46 @@
-//Contains questions on current affairs
-//first 7 questions are of national level and 8 are of global level
+//Contains questions on music
+//first 5 questions are easy , next 5 are intermediate and last 5 are hard
 #include<stdio.h>
-
-int global_chit_chats()
+int music()
 {
     int score = 0;
     char choice[15];
     printf("\e[1;1H\e[2J");
-    printf("1.Which state has celebrated its foundation day on 24 January?\n\tA.\tUttar Pradesh\n\tB.\tWest Bengal\n\tC.\tKerala\n\tD.\tGoa\n");
+    printf("1.Who is credited with creating the world famous Raaga Miya ki Malhar?\n\tA.\tAmir Khusro\n\tB.\tTansen\n\tC.\tMeera Bai\n\tD.\tBhimsen Joshi\n");
     printf("Choice ->");
     scanf(" %c", &choice[0]);
-    if(toupper(choice[0]) == 'A')
+    if(toupper(choice[0]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
     printf("Moving to next question ");
-    for(int i=2;i>0;i--)
-    {
-        printf("%d..", i);
-        sleep(1);
-    }
-    printf("\e[1;1H\e[2J");
-    printf("2.Who has been appointed as the next High Commissioner of India to Malawi?\n\tA.\tM Venkateswar\n\tB.\tKS Trimurthi\n\tC.\tS Gopalakrishnan\n\tD.\tR Shakuntala\n");
-    printf("Choice ->");   
-    scanf(" %c", &choice[1]);
-    if(toupper(choice[1]) == 'C')
-    { 
-        score = score+100;
-        printf("\033[0;32mCorrect Answer!!!\033[0m");
-    }
-    else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
-     printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("3.Which social media platform has suspended 500 accounts for policy breach after the Indian government's request?\n\tA.\tFacebook\n\tB.\tTwitter\n\tC.\tInstagram\n\tD.\tWhatsApp\n");
+    printf("2.The oldest form of composition of Hindustani Vocal Music is:\n\tA.\tGhazal\n\tB.\tDhrupad\n\tC.\tThumri\n\tD.\tQawwali\n");
+    printf("Choice ->");   
+    scanf(" %c", &choice[1]);
+    if(toupper(choice[1]) == 'B')
+    {
+        score = score+100;
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
+    }
+    else
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
+    printf("Moving to next question ");
+        for(int i=2;i>0;i--)
+        {
+            printf("%d..", i);
+            sleep(1);
+        }
+    printf("\e[1;1H\e[2J");
+    printf("3. Which is a wind instrument?\n\tA.\tSitar\n\tB.\tShehnai\n\tC.\tPakhawaj\n\tD.\tMridangam\n");
     printf("Choice ->");
     scanf(" %c", &choice[2]);
     if(toupper(choice[2]) == 'B')
@@ -51,48 +50,48 @@ int global_chit_chats()
     }
     else
     {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("4.Which organization has signed 2 separate MoUs with the smart factory, IISc, and SMDDC for creating the digital transformation labs in India?\n\tA.\tSiemens Ltd\n\tB.\tPhilips\n\tC.\tBosch\n\tD.\tLG\n");
+    printf("4.Who is not related to music?\n\tA.\tMozart\n\tB.\tBach\n\tC.\tPicasso\n\tD.\tBethoven\n");
     printf("Choice ->");
     scanf(" %c", &choice[3]);
-    if(toupper(choice[3]) == 'A')
+    if(toupper(choice[3]) == 'C')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("5.Who was the co-chair of the first India-European Union High-Level Dialogue (HLD) on trade and investment?\n\tA.\tPiyush Goyal\n\tB.\tNarendra Singh Tomar\n\tC.\tRavi Shankar Prasad\n\tD.\tSubrahmanyam Jaishankar\n");
+    printf("5.Yakshagana is a dance form of -\n\tA.\tAndhra Pradesh\n\tB.\tKarnataka\n\tC.\tTamil Nadu\n\tD.\tMaharashtra\n");
     printf("Choice ->");
     scanf(" %c", &choice[4]);
-    if(toupper(choice[4]) == 'A')
+    if(toupper(choice[4]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("6.The 'National Safety Council' has been set up by which Union Ministry?\n\tA.\tMinistry of Food Processing Industries\n\tB.\tMinistry of External Affairs\n\tC.\tMinistry of Finance\n\tD.\tMinistry of Labour\n");
+    printf("6.Hojagiri dance is native to which State?\n\tA.\tSikkim\n\tB.\tOdisha\n\tC.\tAssam\n\tD.\tTripura\n");
     printf("Choice ->");
     scanf(" %c", &choice[5]);
     if(toupper(choice[5]) == 'D')
@@ -102,160 +101,159 @@ int global_chit_chats()
     }
     else
     {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("7.How many states have completed the reforms in 'Ease of Doing Business' as stipulated by the Ministry of Finance?\n\tA.\t20\n\tB.\t12\n\tC.\t10\n\tD.\t8\n");
+    printf("7. Which stringed instrument has the most number of strings?\n\tA.\tGuitar\n\tB.\tUkulele\n\tC.\tViolin\n\tD.\tSitar\n");
     printf("Choice ->");
     scanf(" %c", &choice[6]);
-    if(toupper(choice[6]) == 'B')
+    if(toupper(choice[6]) == 'D')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("8.Which country is poised to become the second country in the world to land successfully on Mars?\n\tA.\tUAE\n\tB.\tIndia\n\tC.\tJapan\n\tD.\tChina\n");
+    printf("8.With which musical instrument is Sandeep Das associated?\n\tA.\tTabla\n\tB.\tSitar\n\tC.\tGuitar\n\tD.\tViolin\n");
     printf("Choice ->");
     scanf(" %c", &choice[7]);
-    if(toupper(choice[7]) == 'D')
+    if(toupper(choice[7]) == 'A')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("9.Which Arab nation's space probe successfully entered the orbit of Mars?\n\tA.\tSaudi Arabia\n\tB.\tUAE\n\tC.\tQatar\n\tD.\tBahrain\n");
+    printf("9.Gulabo Sapera is associated with which form of folk dance?\n\tA.\tJhumar\n\tB.\tGarba\n\tC.\tKalbelia\n\tD.\tLavani\n");
     printf("Choice ->");
     scanf(" %c", &choice[8]);
-    if(toupper(choice[8]) == 'B')
+    if(toupper(choice[8]) == 'C')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("10.Which nation has received USD 200 million from World Bank for safe water and sanitation services?\n\tA.\tPakistan\n\tB.\tNepal\n\tC.\tIndia\n\tD.\tBangladesh\n");
+    printf("10.Sattriya is a classical dance form of which State?\n\tA.\tAssam\n\tB.\tWest Bengal\n\tC.\tOdisha\n\tD.\tKerala\n");
     printf("Choice ->");
     scanf(" %c", &choice[9]);
-    if(toupper(choice[9]) == 'D')
-    {
-        score = score+100;
-        printf("\033[0;32mCorrect Answer!!!\033[0m");
-    }
-    else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
-        for(int i=2;i>0;i--)
-        {
-            printf("%d..", i);
-            sleep(1);
-        }
-    printf("\e[1;1H\e[2J");
-    printf("11.Which country is set to build the world's largest wind power plant?\n\tA.\tSouth Korea\n\tB.\tSingapore\n\tC.\tGermany\n\tD.\tIndia\n");
-    printf("Choice ->");
-    scanf(" %c", &choice[10]);
-    if(toupper(choice[10]) == 'A')
+    if(toupper(choice[9]) == 'A')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("12.Which Indian company has partnered with UNICEF to distribute vaccines around the world?\n\tA.\tBiocon\n\tB.\tSerum Institute of India\n\tC.\tBharat Biotech\n\tD.\tDr Reddys\n");
+    printf("11.With which State is Bhavai dance form associated?\n\tA.\tGujarat\n\tB.\tRajasthan\n\tC.\tChhattisgarh\n\tD.\tOdisha\n");
     printf("Choice ->");
-    scanf(" %c", &choice[11]);
-    if(toupper(choice[11]) == 'B')
+    scanf(" %c", &choice[10]);
+    if(toupper(choice[10]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
-     printf("Moving to next question ");
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("13.Name the first-ever female who has been appointed as the Director-General of the World Trade Organization?\n\tA.\tChukwuka Okonjo\n\tB.\tPascal Lamy\n\tC.\tIkemba Iweala\n\tD.\tNgozi Okonjo-Iweala\n");
+    printf("12.Shanta and VP Dhananjayan are associated with which form of dance-\n\tA.\tYakshagana\n\tB.\tKuchipudi\n\tC.\tBharat Natyam\n\tD.\tOdissi\n");
+    printf("Choice ->");
+    scanf(" %c", &choice[11]);
+    if(toupper(choice[11]) == 'C')
+    {
+        score = score+100;
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
+    }
+    else
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
+    printf("Moving to next question ");
+        for(int i=2;i>0;i--)
+        {
+            printf("%d..", i);
+            sleep(1);
+        }
+    printf("\e[1;1H\e[2J");
+    printf("13.Arvind Parikh is associated with which musical instrument?\n\tA.\tPakhawaj\n\tB.\tSitar\n\tC.\tViolin\n\tD.\tTabla\n");
     printf("Choice ->");
     scanf(" %c", &choice[12]);
-    if(toupper(choice[12]) == 'D')
+    if(toupper(choice[12]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("14.India has participated with which country in the first meeting of the Joint Working Group in the field of Renewable Energy?\n\tA.\tBahrain\n\tB.\tFrance\n\tC.\tJapan\n\tD.\tUSA\n");
+    printf("14.Hariprasad Chaurasia is associated with which musical instrument?\n\tA.\tTabla\n\tB.\tFlute\n\tC.\tShehnai\n\tD.\tSantoor\n");
     printf("Choice ->");
     scanf(" %c", &choice[13]);
-    if(toupper(choice[13]) == 'A')
+    if(toupper(choice[13]) == 'B')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");}
-     printf("Moving to next question ");
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");}
+    printf("Moving to next question ");
         for(int i=2;i>0;i--)
         {
             printf("%d..", i);
             sleep(1);
         }
     printf("\e[1;1H\e[2J");
-    printf("15.Which company has been chosen by NASA for its SPHEREx Mission to perform an all-sky survey?\n\tA.\tBlue Origin\n\tB.\tSpaceX\n\tC.\tBoeing\n\tD.\tNational Aeronautics and Space Administration\n");
+    printf("15.Dollu Kunitha is a popular folk dance of -\n\tA.\tNagaland\n\tB.\tGujarat\n\tC.\tKarnataka\n\tD.\tJharkhand\n");
     printf("Choice ->");
     scanf(" %c", &choice[14]);
-    if(toupper(choice[14]) == 'D')
+    if(toupper(choice[14]) == 'C')
     {
         score = score+100;
         printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
-    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
-
+    {printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");}
     if(score>1000)
     {
         printf("Congrants!!! Your Score is %d\n" , score);
@@ -277,9 +275,8 @@ int global_chit_chats()
     fscanf(num, "%d", &s_num);
     fclose(num);
     ptr = fopen("prev_scores.txt", "a");
-    fprintf(ptr, "%d\t\t%d\t\tGlobal Chit-Chats\n",s_num,score);
+    fprintf(ptr, "%d\t\t%d\t\tPOLYMUSE\n",s_num,score);
     fclose(ptr);
-    char decision;
     for(int i = 0;i < 1000;i++)
     {
         printf("Do You want to take the Quiz again Y/N : ");
