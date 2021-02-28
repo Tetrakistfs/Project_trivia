@@ -1,6 +1,12 @@
-# Project_trivia
-mid sem project:first year
-contents of the repository:
+                                    /******CSE FIRST YEAR PROJECT******/
+                                    /*********END SEM PROJECT*********/
+CREATED BY:
+HIMANSHU VERMA : 201210023
+PAYAL JAIN : 201210054
+
+TITLE OF THE PROJECT : QUIZZITCH
+
+PROJECT CONTENTS:
 1.home.c
 2.after_choice.h
 3.category.h
@@ -18,14 +24,15 @@ contents of the repository:
 15.reset_score.h
 16.serial_number.txt
 
-/***********************bugs in the program:*********************************/
+/**ABOUT PROJECT :**/ 
+THE PURPOSE OF THE PROJECT IS TO MAKE A TRIVIA QUIZ.
 
-features to be added:
-NIL 
+ENVIROMENT USED :
+THE PROJECT IS MADE ON VISUAL STUDIO CODE AND WAS MANAGED WITH THE HELP OF GITHUB.
 
-bugs fixed:
-Spacing in options -- fixed
-the crashing errors -- fixed
-the loop in the home.c errors -- fixed
-warnings in the declarations and sleep functions --fixed
-the quit button has to be pressed for the same no. of times that the user has played or selected different categories and then returned to the main screen. --fixed
+PREREQUISITIES : 
+1.Knowledge of C language.
+2.COMPILER (either 32-bit or 64-bit).
+3.A Command terminal or an IDE(preferred on Visual Studio Code).
+4.All the files should be present in the same directory as the main.c program.
+5.The code files as well as the content(code and comments) should not be tempered with.

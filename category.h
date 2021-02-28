@@ -79,11 +79,12 @@ int category()
     }
     else if(toupper(choose_cat) == 'I')
     {
-        instructions();
+        printf("\e[1;1H\e[2J");
+        main_instruct();
     }
     else
     {
-        printf("\n\t\t\tNot A valid Choice..!!");
+        printf("\033[1;31m\n\t\t\tNot A valid Choice..!!\033[0m");
         sleep(1);
         category();
     }
