@@ -46,7 +46,7 @@ int after_name()
 int quit()
 {
     printf("\033[0;36m\n\t\t\t\t\t\033[7mThank you for playing the game\n\033[0m");
-    sleep(1);
+    sleep(2);
     return after_name();
 }
 
