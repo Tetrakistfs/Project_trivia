@@ -11,38 +11,33 @@ int after_name()
 {
     char ch;
     printf("\e[1;1H\e[2J");
-    printf("\t\t\t > Press S to Start the game\n");
+    printf("\033[1m\t\t\t\033[7m              THE QUIZZITCH               \033[0m\n");
+    printf("\033[0;32m\t\t\t > Press S to Start the game\n");
     printf("\t\t\t > Press I for Rules and Regulations\n");
     printf("\t\t\t > Press P for Previous score\n");
     printf("\t\t\t > Press R to Reset score\n");
-    printf("\t\t\t > Press Q to Quit Game\n");
-    printf("\t\t\t > Choice->");
+    printf("\t\t\t > Press Q to Quit Game\n\033[0m");
+    printf("\033[0;33m\t\t\t > Choice->\033[0m");
     scanf(" %c",&ch);
     if(toupper(ch)=='S')
     {
         category();
     }
-    else if(toupper(ch)=='I')
+    if(toupper(ch)=='I')
     {
-        main_instruct();
+        instructions();
     }
-    else if(toupper(ch)=='P')
+    if(toupper(ch)=='P')
     {
         prev_scores();
     }
-    else if(toupper(ch)=='R')
+    if(toupper(ch)=='R')
     {
         reset_score();
     }
-    else if(toupper(ch)=='Q')
+    if(toupper(ch)=='Q')
     {
         exit(0);
-    }
-    else
-    {
-        printf("\n\t\t\tNot A valid Choice..!!");
-        sleep(1);
-        after_name();
     }
 
 }
@@ -50,7 +45,7 @@ int after_name()
 //to quit the game
 int quit()
 {
-    printf("\n\t\t\t\t\tThank you for playing the game\n");
+    printf("\033[0;36m\n\t\t\t\t\t\033[7mThank you for playing the game\n\033[0m");
     return after_name();
 }
 
@@ -60,12 +55,11 @@ char after_cat;
                                 /**common function to be displayed after each category**/ 
 int common_instruct()
 {
-    printf("\e[1;1H\e[2J");
-    printf("There will be a total of 15 Questions\n");
-    printf("Once started you cannot quit the quiz in the middle\n");
-    printf("Press E to enter the quiz:\n");
-    printf("Press R to return to the category choice menu:\n");
-    printf("Decision --> ");
+    printf("\033[0;35mThere will be a total of 15 Questions\n\033[0m");
+    printf("\033[0;31mOnce started you cannot quit the quiz in the middle\033[0m\n");             //setting the color red
+    printf("\033[0;35mPress E to enter the quiz:\n");
+    printf("Press R to return to the category choice menu:\n\033[0m");
+    printf("Decision --> \033");                                                    //setting the color blue
     scanf(" %c", &after_cat);
     return (after_cat);
 }  
@@ -75,8 +69,8 @@ int after_fiction()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"Fiction\"\n");
-    printf("This category is about Fiction and Literature and reading books is good(not the Kindle!..).\n");
+    printf("\033[1;35m\"Fiction\"\n\033[0m");
+    printf("\033[0;36mThis category is about Fiction and Literature and reading books is good(not the Kindle!..).\n\033[0m");    //cyan color
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -100,7 +94,7 @@ int after_fiction()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -112,8 +106,8 @@ int after_music()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"POLYMUSE\"\n");
-    printf("This category is about MUSIC If you didn't bleed your ears out.\n");
+    printf("\033[1;35m\"POLYMUSE\"\n\033[0m");
+    printf("\033[0;36mThis category is about MUSIC If you didn't bleed your ears out.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -137,7 +131,7 @@ int after_music()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -148,8 +142,8 @@ int after_avengers()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"THE CINEMAPHILE\"\n");
-    printf("This category is about Movies especially MCU cause we didn't had any other questions.\n");
+    printf("\033[1;35m\"THE CINEMAPHILE\"\n\033[0m");
+    printf("\033[0;36mThis category is about Movies especially MCU cause we didn't had any other questions.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -173,7 +167,7 @@ int after_avengers()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -184,8 +178,8 @@ int after_sports()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"Sports\n\"");
-    printf("This category is about Sports and Hope you don't count your situps!!...\n");
+    printf("\033[1;35m\"Sports\n\"\033[0m");
+    printf("\033[0;36mThis category is about Sports and Hope you don't count your situps!!...\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -209,7 +203,7 @@ int after_sports()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -220,8 +214,8 @@ int after_technology()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"Technology\"\n");
-    printf("This category is about Technology and i'm sure you can do it.\n");
+    printf("\033[1;35m\"Technology\"\n\033[0m");
+    printf("\033[0;36mThis category is about Technology and i'm sure you can do it.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -245,7 +239,7 @@ int after_technology()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -256,8 +250,8 @@ int after_anime()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"THE WEEB\"\n");
-    printf("This category is about Anime If you watch em.\n");
+    printf("\033[1;35m\"THE WEEB\"\n\033[0m");
+    printf("\033[0;36mThis category is about Anime If you watch em.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -281,7 +275,7 @@ int after_anime()
 
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -292,8 +286,8 @@ int after_gaming()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"GAMING\"\n");
-    printf("This category is about Gaming and i'm sure that you play them.\n");
+    printf("\033[1;35m\"GAMING\"\n\033[0m");
+    printf("\033[0;36mThis category is about Gaming and i'm sure that you play them.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -316,7 +310,7 @@ int after_gaming()
         }
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    
@@ -327,8 +321,8 @@ int after_global_chit_chats()
 {
     int count;
     printf("\e[1;1H\e[2J");
-    printf("\"GLOBAL CHIT CHATS\"");
-    printf("\nThis category is about Global news if you watch the news channels.\n");
+    printf("\033[1;35m\"GLOBAL CHIT CHATS\"\033[0m");
+    printf("\033[0;36mThis category is about Global news if you watch the news channels.\n\033[0m");
     common_instruct();
     FILE * fp = fopen("serial_number.txt" , "r");
     fscanf(fp , "%d" , &count);
@@ -351,7 +345,7 @@ int after_global_chit_chats()
         }
         else
         {
-            printf("Enter a valid choice, DUMMY!!\n");
+            printf("\033[0;31mEnter a valid choice, DUMMY!!\n\033[0m");
             common_instruct();
         }
     }    

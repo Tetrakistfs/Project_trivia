@@ -9,7 +9,7 @@ int reset_score()
     
     for (int i = 0;i < 1000;i++)
     {
-        printf("Are you sure you want to reset the score(Y or N):");
+        printf("\033[0;37mAre you sure you want to reset the score(Y or N):\033[0m");
         scanf(" %c" , &a);
         if(toupper(a) == 'Y')
         {

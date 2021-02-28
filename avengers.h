@@ -14,11 +14,11 @@ int avengers()
     if(toupper(choice[0]) == 'C')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is C\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -33,11 +33,11 @@ int avengers()
     if(toupper(choice[1]) == 'C')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is C\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
         }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -52,11 +52,11 @@ int avengers()
     if(toupper(choice[2]) == 'C')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is C\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -71,11 +71,11 @@ int avengers()
     if(toupper(choice[3]) == 'A')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is A\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -90,11 +90,11 @@ int avengers()
     if(toupper(choice[4]) == 'D')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is D\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -109,11 +109,11 @@ int avengers()
     if(toupper(choice[5]) == 'B')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is B\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -128,11 +128,11 @@ int avengers()
     if(toupper(choice[6]) == 'B')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is B\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -147,11 +147,11 @@ int avengers()
     if(toupper(choice[7]) == 'D')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is D\n");}
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");}
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
             {
@@ -165,11 +165,11 @@ int avengers()
     if(toupper(choice[8]) == 'C')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is C\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is C\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -184,11 +184,11 @@ int avengers()
     if(toupper(choice[9]) == 'B')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is B\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -203,11 +203,11 @@ int avengers()
     if(toupper(choice[10]) == 'B')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is B\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is B\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -222,11 +222,11 @@ int avengers()
     if(toupper(choice[11]) == 'A')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is A\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -241,11 +241,11 @@ int avengers()
     if(toupper(choice[12]) == 'D')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is D\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
     }
     printf("Moving to next question ");
             for(int i=2;i>0;i--)
@@ -260,11 +260,11 @@ int avengers()
     if(toupper(choice[13]) == 'A')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is A\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is A\n");
     }
     printf("Moving to next question ");
         for(int i=2;i>0;i--)
@@ -279,26 +279,26 @@ int avengers()
     if(toupper(choice[14]) == 'D')
     {
         score = score+100;
-        printf("Correct Answer!!!");
+        printf("\033[0;32mCorrect Answer!!!\033[0m");
     }
     else
     {
-        printf("OOPS!! WRONG ANSWER\nCorrect answer is D\n");
+        printf("\033[0;31mOOPS!! WRONG ANSWER\033[0m\nCorrect answer is D\n");
     }
     if(score>1000)
     {
         printf("Congrants!!! Your Score is %d\n" , score);
-        printf("You Rocked it!!\n");
+        printf("\033[7mYou Rocked it!!\n\033[0m");
     }
     else if(score>500)
     {
         printf("Congrants!!! Your Score is %d\n" ,score);
-        printf("Good Performance\n");
+        printf("\033[7mGood Performance\n\033[0m");
     }
     else
     {
         printf("Your Score is %d\n" ,score);
-        printf("Better luck next time\n");
+        printf("\033[7mBetter luck next time\n\033[0m");
     }
     int s_num;
     FILE * ptr = NULL;;
