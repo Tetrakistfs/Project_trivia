@@ -6,3 +6,5 @@
 6		600		Fiction and Literature
 7		500		Anime
 10		1000		BOOKWORM
+11		1500		THE WEEB
+12		700		GAMING
