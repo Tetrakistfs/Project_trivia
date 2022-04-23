@@ -39,6 +39,10 @@ int after_name()
     {
         exit(0);
     }
+    else
+    printf("\033[1;31m\t\t\tNOT A VALID CHOICE\033[0m");
+    sleep(2);
+    after_name();
 
 }
 
