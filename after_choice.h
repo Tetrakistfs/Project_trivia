@@ -43,7 +43,10 @@ int after_name()
     printf("\033[1;31m\t\t\tNOT A VALID CHOICE\033[0m");
     sleep(2);
     after_name();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05dcf19be9737974064cf421404ab10d91736506
 }
 
 //to quit the game
